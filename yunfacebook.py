@@ -1,0 +1,6 @@
+#!/usr/bin/python
+import facebook
+import sys
+messagefacebook=sys.argv[1]
+graph = facebook.GraphAPI('CAAURY73RwKcBAEcTSZCpU3TcEIzFu2pebg7FjneEP4DG34KJ6COcinpSAuNQnxJntXmo33nzbM7cdANXZCZB2pn7uEIJGtZARZApkYCabsZAtnZAoThJFJI8l7GDXWI3N9OYdZBZCVZC0YZClubZAqZAMAz6g60BQ4pdijuHK0dkOoaQvVjUPzv4nrUw1C5yREYIkGgOsVFj5i7sQdQZDZD')
+graph.put_object("me", "feed", message=messagefacebook)
